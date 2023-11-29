@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Batchaya - Portfolio</title>
+  <!-- Material Design 3 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@material/mwc-top-app-bar@3.0.0/mwc-top-app-bar.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@material/mwc-button@3.0.0/mwc-button.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@material/mwc-list@3.0.0/mwc-list.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@material/mwc-card@3.0.0/mwc-card.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@material/mwc-icon@3.0.0/mwc-icon.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@material/mwc-icon-button@3.0.0/mwc-icon-button.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@material/mwc-snackbar@3.0.0/mwc-snackbar.css">
+  <!-- Your custom styles go here -->
+  <style>
+    /* Add your custom styles here */
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    mwc-top-app-bar-fixed {
+      position: fixed;
+      width: 100%;
+    }
+
+    main {
+      padding: 80px 16px 16px 16px;
+    }
+
+    mwc-card {
+      margin: 16px;
+    }
+
+    mwc-list {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Top App Bar -->
+  <mwc-top-app-bar-fixed>
+    <mwc-top-app-bar>
+      <div slot="title">Your Name</div>
+      <mwc-icon-button icon="menu" slot="navigationIcon"></mwc-icon-button>
+      <mwc-icon-button icon="account_circle" slot="actionItems"></mwc-icon-button>
+    </mwc-top-app-bar>
+  </mwc-top-app-bar-fixed>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Add your portfolio content here -->
+    <mwc-card>
+      <h2>Your Projects</h2>
+      <mwc-list>
+        <!-- List of projects from your GitHub profile -->
+        <mwc-list-item graphic="icon">
+          <span>mwc-icon</span>
+          <mwc-icon slot="graphic">code</mwc-icon>
+          <span slot="title">Project 1</span>
+          <span slot="secondary">Description of Project 1</span>
+        </mwc-list-item>
+        <!-- Add more items as needed -->
+      </mwc-list>
+    </mwc-card>
+  </main>
+
+  <!-- Material Design 3 JavaScript -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@material/mwc-top-app-bar@3.0.0/mwc-top-app-bar.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@material/mwc-icon-button@3.0.0/mwc-icon-button.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@material/mwc-icon@3.0.0/mwc-icon.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@material/mwc-list@3.0.0/mwc-list.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@material/mwc-card@3.0.0/mwc-card.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@material/mwc-snackbar@3.0.0/mwc-snackbar.js"></script>
+</body>
+
+</html>
